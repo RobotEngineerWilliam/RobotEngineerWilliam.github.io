@@ -2,9 +2,189 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://example.com/2024/07/23/hello-world/</loc>
+    <loc>https://robotengineerwilliam.github.io/daily/The%20Devil%20Wears%20Prada.html</loc>
     
-    <lastmod>2024-07-23</lastmod>
+    <lastmod>2025-02-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://robotengineerwilliam.github.io/learn/%E5%AF%B9%E5%81%B6%E5%9B%9B%E5%85%83%E6%95%B0.html</loc>
+    
+    <lastmod>2024-10-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://robotengineerwilliam.github.io/2025/02/21/10_C++/</loc>
+    
+    <lastmod>2024-08-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://robotengineerwilliam.github.io/2025/02/21/log/</loc>
+    
+    <lastmod>2024-08-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://robotengineerwilliam.github.io/2025/02/21/9_Moveit/</loc>
+    
+    <lastmod>2024-08-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://robotengineerwilliam.github.io/2025/02/21/8_OMPL/</loc>
+    
+    <lastmod>2024-08-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://robotengineerwilliam.github.io/2024/07/29/3_Conda/</loc>
+    
+    <lastmod>2024-08-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://robotengineerwilliam.github.io/2024/07/29/0_paper_2/</loc>
+    
+    <lastmod>2024-08-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://robotengineerwilliam.github.io/2024/07/29/0_running/</loc>
+    
+    <lastmod>2024-08-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://robotengineerwilliam.github.io/2024/07/29/Markdown/</loc>
+    
+    <lastmod>2024-08-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://robotengineerwilliam.github.io/2024/07/29/Marktext/</loc>
+    
+    <lastmod>2024-08-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://robotengineerwilliam.github.io/2024/07/29/6_ROS/</loc>
+    
+    <lastmod>2024-08-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://robotengineerwilliam.github.io/2024/07/29/7_Ubuntu/</loc>
+    
+    <lastmod>2024-08-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://robotengineerwilliam.github.io/2024/07/29/5_LaTex/</loc>
+    
+    <lastmod>2024-08-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://robotengineerwilliam.github.io/2024/07/29/4_Deep_Learning/</loc>
+    
+    <lastmod>2024-08-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://robotengineerwilliam.github.io/2024/07/29/2_Docker/</loc>
+    
+    <lastmod>2024-08-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://robotengineerwilliam.github.io/2024/07/29/3_Cuda/</loc>
+    
+    <lastmod>2024-08-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://robotengineerwilliam.github.io/2024/07/29/1_Hexo/</loc>
+    
+    <lastmod>2024-08-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://robotengineerwilliam.github.io/about/index.html</loc>
+    
+    <lastmod>2024-07-29</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://robotengineerwilliam.github.io/daily/index.html</loc>
+    
+    <lastmod>2024-07-29</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://robotengineerwilliam.github.io/learn/index.html</loc>
+    
+    <lastmod>2024-07-29</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -12,8 +192,8 @@
   
 
   <url>
-    <loc>http://example.com/</loc>
-    <lastmod>2024-07-23</lastmod>
+    <loc>https://robotengineerwilliam.github.io/</loc>
+    <lastmod>2025-03-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>

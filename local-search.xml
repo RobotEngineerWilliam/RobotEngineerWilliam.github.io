@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title></title>
+    <link href="/2025/02/21/10_C++/"/>
+    <url>/2025/02/21/10_C++/</url>
+    
+    <content type="html"><![CDATA[<h2 id="虚函数"><a href="#虚函数" class="headerlink" title="虚函数"></a>虚函数</h2><p>虚函数定义: <code>virtual void vfunc1() &#123; cout &lt;&lt; &quot;A::vfunc1()&quot; &lt;&lt; endl; &#125;;</code><br>纯虚函数定义: <code>virtual void funtion1()=0</code><br>虚函数允许子类进行重写，但是纯虚函数要求子类必须重写（包含纯虚函数的类为抽象类，无法实例化）</p><h2 id="原子类型-std-atomic-ready-false"><a href="#原子类型-std-atomic-ready-false" class="headerlink" title="原子类型: std::atomic&lt;bool&gt; ready(false);"></a>原子类型: <code>std::atomic&lt;bool&gt; ready(false);</code></h2><p>只允许单线程操作，自带锁，保证进程安全</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title></title>
+    <link href="/2025/02/21/8_OMPL/"/>
+    <url>/2025/02/21/8_OMPL/</url>
+    
+    <content type="html"><![CDATA[<h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><ul><li>ompl是一个针对任意物体的采样规划算法库（框架）</li></ul>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title></title>
+    <link href="/2025/02/21/9_Moveit/"/>
+    <url>/2025/02/21/9_Moveit/</url>
+    
+    <content type="html"><![CDATA[<h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><ul><li>moveit是一个机器人的规划控制框架（定义了一个机器人由哪些模块组成，每个模块提供怎样的功能接口，使得模块之间也可以通过这些接口相互调用），可以选择不同的正逆运动学模块，机器人构型模块，规划器模块，控制器模块进行组合</li><li><strong>猜测</strong> 所谓ompl和moveit的集成，就是将不同的moveit模块整合到ompl的框架中</li></ul>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title></title>
+    <link href="/2025/02/21/log/"/>
+    <url>/2025/02/21/log/</url>
+    
+    <content type="html"><![CDATA[<h1 id="工作日志"><a href="#工作日志" class="headerlink" title="工作日志"></a>工作日志</h1><h2 id="模版"><a href="#模版" class="headerlink" title="模版"></a>模版</h2><h3 id="完成工作"><a href="#完成工作" class="headerlink" title="完成工作"></a>完成工作</h3><h3 id="遗留问题"><a href="#遗留问题" class="headerlink" title="遗留问题"></a>遗留问题</h3><h3 id="明日工作"><a href="#明日工作" class="headerlink" title="明日工作"></a>明日工作</h3><h2 id="2024-8-16"><a href="#2024-8-16" class="headerlink" title="2024-8-16"></a>2024-8-16</h2><h3 id="完成工作-1"><a href="#完成工作-1" class="headerlink" title="完成工作"></a>完成工作</h3><ul><li>局部极小值三个场景的仿真视频</li><li>动态障碍物的发布</li><li>考虑了两个可研究问题：<ul><li>多机变构型搬运：机器人的能力分配，编队运动规划</li><li>单机全身操作：执行器分布在机器人全身</li></ul></li><li>明确了未来研究应着眼于别人很少研究的问题，一个可行的思路是将单机变为多机。接下来的任务之一是整理各种文献中研究的问题</li></ul><h3 id="遗留问题-1"><a href="#遗留问题-1" class="headerlink" title="遗留问题"></a>遗留问题</h3><ul><li>动态障碍物无法反应，即使是2m&#x2F;s的障碍物也无法表现出后退或向左右绕障的行为。已确认ESDF更新频率满足需求。目前猜测障碍物周围应建立阻尼场，否则机器人只有在发生碰撞时才能反应，反应时间不足。</li><li>多线程进行时访问ESDF会出现错误</li></ul><h3 id="明日工作-1"><a href="#明日工作-1" class="headerlink" title="明日工作"></a>明日工作</h3><ul><li>建立RAMPAGE中动态障碍物场景，确认是否能够跑通</li><li>针对动态障碍物建立阻尼场，确认猜测</li><li>若动态障碍物无法跑通，先考虑多场景仿真（初步设想6个全局场景，3个实时感知场景）</li><li>把全身MPPI和QP的local场景跑了</li><li>整理20篇文献问题</li></ul><h2 id="2024-8-17"><a href="#2024-8-17" class="headerlink" title="2024-8-17"></a>2024-8-17</h2><h3 id="完成工作-2"><a href="#完成工作-2" class="headerlink" title="完成工作"></a>完成工作</h3><ul><li>建了TIE中的场景，并跑通录了视频</li></ul><h3 id="遗留问题-2"><a href="#遗留问题-2" class="headerlink" title="遗留问题"></a>遗留问题</h3><ul><li>尝试建了阻尼场，但是行为很奇怪</li></ul><h3 id="明日工作-2"><a href="#明日工作-2" class="headerlink" title="明日工作"></a>明日工作</h3><ul><li>配音</li><li>测ESDF更新</li><li>完成多场景仿真（初步设想6个全局场景，3个实时感知场景）</li><li>把全身MPPI和QP的local场景跑了</li><li>整理40篇文献问题</li></ul><h2 id="2024-8-18"><a href="#2024-8-18" class="headerlink" title="2024-8-18"></a>2024-8-18</h2><h3 id="完成工作-3"><a href="#完成工作-3" class="headerlink" title="完成工作"></a>完成工作</h3><ul><li>ESDF存在时间延迟，100Hz条件下2m&#x2F;s可接受，5m&#x2F;s存在1m距离延迟，8m&#x2F;s下存在1.5~2m距离延迟，可能是ESDF更新频率限制</li><li>完成两个场景的仿真</li><li>完成配音，找了个音量平衡的网站</li></ul><h3 id="遗留问题-3"><a href="#遗留问题-3" class="headerlink" title="遗留问题"></a>遗留问题</h3><h3 id="明日工作-3"><a href="#明日工作-3" class="headerlink" title="明日工作"></a>明日工作</h3><ul><li>找吴老师要邮箱，把视频和PPT提交掉</li><li>四个场景仿真</li><li>把全身MPPI和QP的local场景跑了</li><li>整理60篇文献问题</li></ul><h2 id="2024-8-19"><a href="#2024-8-19" class="headerlink" title="2024-8-19"></a>2024-8-19</h2><h3 id="完成工作-4"><a href="#完成工作-4" class="headerlink" title="完成工作"></a>完成工作</h3><ul><li>完成4个场景仿真</li><li>完成全身MPPI的local场景仿真</li></ul><h3 id="遗留问题-4"><a href="#遗留问题-4" class="headerlink" title="遗留问题"></a>遗留问题</h3><h3 id="明日工作-4"><a href="#明日工作-4" class="headerlink" title="明日工作"></a>明日工作</h3><ul><li>整理60篇文献问题</li></ul>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>paper 2</title>
+    <link href="/2024/07/29/0_paper_2/"/>
+    <url>/2024/07/29/0_paper_2/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>跑步</title>
+    <link href="/2024/07/29/0_running/"/>
+    <url>/2024/07/29/0_running/</url>
+    
+    <content type="html"><![CDATA[<h2 id="半马总长：21-1km"><a href="#半马总长：21-1km" class="headerlink" title="半马总长：21.1km"></a>半马总长：21.1km</h2><h2 id="半马用时：2h"><a href="#半马用时：2h" class="headerlink" title="半马用时：2h"></a>半马用时：2h</h2><h2 id="半马赛事："><a href="#半马赛事：" class="headerlink" title="半马赛事："></a>半马赛事：</h2><ol><li>上海苏州河半程马拉松赛（普陀区）：报名 - 1月；参赛 - 3月</li><li>上海半程马拉松（浦东新区）：报名 - 3月；参赛 - 4月</li><li>上海佘山半程马拉松（松江区）：报名 - 3月；参赛 - 4月</li><li>上海长江半程马拉松赛（崇明）：报名 - 3月；参赛 - 4月</li><li>上海易跑·森林越野半程马拉松（杨浦区共青森林公园）：报名 - 4月；参赛 - 4月</li><li>上海海湾半程马拉松（奉贤区海湾国家森林公园）：报名 - 11月；参赛 - 1月</li></ol>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Hexo指南</title>
+    <link href="/2024/07/29/1_Hexo/"/>
+    <url>/2024/07/29/1_Hexo/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Docker指南</title>
+    <link href="/2024/07/29/2_Docker/"/>
+    <url>/2024/07/29/2_Docker/</url>
+    
+    <content type="html"><![CDATA[<h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><ul><li><p><strong>Docker 把应用程序及其依赖，打包在 image 文件里面。</strong> image 文件可以看作是容器的模板。Docker 根据 image 文件生成容器的实例。实际开发中，一个 image 文件往往通过继承另一个 image 文件，加上一些个性化设置而生成。</p></li><li><p>站在 Docker 的角度，软件就是容器的组合：业务逻辑容器、数据库容器、储存容器、队列容器……Docker 使得软件可以拆分成若干个标准化容器，然后像搭积木一样组合起来。微服务（microservices）的思想：软件把任务外包出去，让各种外部服务完成这些任务，软件本身只是底层服务的调度中心和组装层。每个容器承载一个服务。一台计算机同时运行多个容器，从而就能很轻松地模拟出复杂的微服务架构。</p></li></ul><h2 id="常用操作"><a href="#常用操作" class="headerlink" title="常用操作"></a>常用操作</h2><ul><li><p>换源</p><blockquote><p>1、在&#x2F;etc&#x2F;docker&#x2F;下修改（如有）或创建daemon.json文件</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">gedit /etc/docker/daemon.json<br></code></pre></td></tr></table></figure><p>2、把以下内容复制进去：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs shell">&#123;<br>    &quot;registry-mirrors&quot;: [<br>        &quot;https://registry.hub.docker.com&quot;,<br>    ]<br>&#125;<br></code></pre></td></tr></table></figure><p>3、重启docker</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">systemctl restart docker<br></code></pre></td></tr></table></figure><p>4、查看是否更换成功</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">docker info<br></code></pre></td></tr></table></figure></blockquote></li><li><p>容器控制</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs shell">docker image pull ***(image)<br>docker container run ***(image:tag)<br>e.g. docker container run -p 8000:3000 -it koa-demo:0.0.1 /bin/bash<br>docker container ls -all<br>docker container kill ***(containID)<br>docker container rm ***(containID)<br></code></pre></td></tr></table></figure><p>  备注：</p><blockquote><p>-p参数：容器的 3000 端口映射到本机的 8000 端口。<br>-it参数：容器的 Shell 映射到当前的 Shell，然后你在本机窗口输入的命令，就会传入容器。<br>koa-demo:0.0.1：image 文件的名字（如果有标签，还需要提供标签，默认是 latest 标签）。<br>&#x2F;bin&#x2F;bash：容器启动以后，内部第一个执行的命令。这里是启动 Bash，保证用户可以使用 Shell。</p></blockquote></li><li><p>image制作</p><ul><li><p>.dockerignore编写：排除不需要拷贝进image的项目文件</p><figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs lua">.git<br>node_modules<br>npm-<span class="hljs-built_in">debug</span>.<span class="hljs-built_in">log</span><br></code></pre></td></tr></table></figure></li><li><p>Dockerfile编写</p><figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs dockerfile"><span class="hljs-keyword">FROM</span> node:<span class="hljs-number">8.4</span>：该 image 文件继承官方的 node image，冒号表示标签，这里标签是<span class="hljs-number">8.4</span>，即<span class="hljs-number">8.4</span>版本的 node。<br><span class="hljs-keyword">COPY</span><span class="language-bash"> . /app：将当前目录下的所有文件（除了.dockerignore排除的路径），都拷贝进入 image 文件的/app目录。</span><br><span class="hljs-keyword">WORKDIR</span><span class="language-bash"> /app：指定接下来的工作路径为/app。</span><br><span class="hljs-keyword">RUN</span><span class="language-bash"> npm install：在/app目录下，运行npm install命令安装依赖。注意，安装后所有的依赖，都将打包进入 image 文件。</span><br><span class="hljs-keyword">EXPOSE</span> <span class="hljs-number">3000</span>：将容器 <span class="hljs-number">3000</span> 端口暴露出来， 允许外部连接这个端口。<br></code></pre></td></tr></table></figure></li><li><p>编译</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs shell">docker image build -t (name):(tag) (Dockerfile path)<br>e.g. docker image build -t koa-demo:0.0.1 .<br></code></pre></td></tr></table></figure></li></ul></li></ul>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>paper 2</title>
+    <link href="/2024/07/29/3_Conda/"/>
+    <url>/2024/07/29/3_Conda/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Cuda指南</title>
+    <link href="/2024/07/29/3_Cuda/"/>
+    <url>/2024/07/29/3_Cuda/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Deep Learning 入门</title>
+    <link href="/2024/07/29/4_Deep_Learning/"/>
+    <url>/2024/07/29/4_Deep_Learning/</url>
+    
+    <content type="html"><![CDATA[<p>微调：</p><p>    问题：针对一个目的重新建立数据集很贵</p><p>    神经网络一般分为两个部分：特征提取和线性分类&#x2F;回归。微调就是保留特征提取部分，对最后的线性分类部分进行重新训练（使用更小的学习率和更少的数据迭代；减小甚至固定部分底层参数）</p><p>code:</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span><br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>LaTeX 指南</title>
+    <link href="/2024/07/29/5_LaTex/"/>
+    <url>/2024/07/29/5_LaTex/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>ROS 指南</title>
+    <link href="/2024/07/29/6_ROS/"/>
+    <url>/2024/07/29/6_ROS/</url>
+    
+    <content type="html"><![CDATA[<p>.py 文件编译：</p><ul><li>文件开头需要加上以下注释，表明解释器</li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment">#! /usr/bin/env python</span><br></code></pre></td></tr></table></figure><ul><li>文件加上可执行权限</li></ul><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs markup">chmod u+x ***<br></code></pre></td></tr></table></figure><ul><li><p>launch运行</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">node</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;random_map_sensing&quot;</span> <span class="hljs-attr">pkg</span>=<span class="hljs-string">&quot;mppi_panda_mobile&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;real_time_obstacle_publisher.py&quot;</span> <span class="hljs-attr">output</span>=<span class="hljs-string">&quot;screen&quot;</span>&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-name">node</span>&gt;</span><br></code></pre></td></tr></table></figure></li></ul>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Ubuntu指南</title>
+    <link href="/2024/07/29/7_Ubuntu/"/>
+    <url>/2024/07/29/7_Ubuntu/</url>
+    
+    <content type="html"><![CDATA[<ul><li><p>目录：</p><table><thead><tr><th align="center">目录名</th><th align="center">内容</th></tr></thead><tbody><tr><td align="center">&#x2F;bin</td><td align="center"></td></tr><tr><td align="center">&#x2F;boot</td><td align="center"></td></tr><tr><td align="center">&#x2F;dec</td><td align="center"></td></tr><tr><td align="center">&#x2F;etc</td><td align="center"></td></tr><tr><td align="center">&#x2F;home</td><td align="center"></td></tr><tr><td align="center">&#x2F;lib</td><td align="center"></td></tr><tr><td align="center">&#x2F;lost+found</td><td align="center"></td></tr><tr><td align="center">&#x2F;media</td><td align="center"></td></tr><tr><td align="center">&#x2F;mnt</td><td align="center"></td></tr><tr><td align="center">&#x2F;opt</td><td align="center"></td></tr><tr><td align="center">&#x2F;proc</td><td align="center"></td></tr><tr><td align="center">&#x2F;root</td><td align="center"></td></tr><tr><td align="center">&#x2F;sbin</td><td align="center"></td></tr><tr><td align="center">&#x2F;sys</td><td align="center"></td></tr><tr><td align="center">&#x2F;tmp</td><td align="center"></td></tr><tr><td align="center">&#x2F;usr</td><td align="center"></td></tr><tr><td align="center">&#x2F;var</td><td align="center"></td></tr></tbody></table></li><li></li></ul>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Markdown语法</title>
+    <link href="/2024/07/29/Markdown/"/>
+    <url>/2024/07/29/Markdown/</url>
+    
+    <content type="html"><![CDATA[<ul><li><p>多级标题：n个#</p></li><li><p>斜体：*…* 粗体：**…** 粗体+斜体：***…<em>*</em></p></li><li><p>段落方块背景：&gt; ; 嵌套：&gt;&gt;</p></li><li><p>代码：`…`，如果代码中包括反引号，外围反引号增加；代码块：```…```</p></li><li><p>分隔线：单独一行***，行前后需要空行</p></li><li><p>超链接：[超链接显示名](超链接地址 “鼠标悬停时文字”) 若要对超链接名增加显示效果，符号应包含整个链接，代码显示只需加在显示名中即可</p></li><li><p>网址、E-mail：&lt;…&gt;；注：为了兼容性，请尽量使用%20代替空格</p></li><li><p>参考文献链接格式：参考<a href="https://markdown.com.cn/basic-syntax/links.html">Markdown 链接语法 | Markdown 官方教程</a></p></li><li><p>图像：[![无法显示图片时的文字](图片链接 “图片鼠标悬停时文字”)](点击图片跳转链接)，最后一项可省</p></li><li><p>HTML转义字符：在HTML中需要转义的&lt;和&amp;在markdown中不需要转义，系统会自动区分HTML实体与一般语言，从而进行区别操作</p></li><li><p>HTML标签：HTML标签可以正常使用，如行级内联标签。对于 HTML 的块级元素 <code>&lt;div&gt;</code>、<code>&lt;table&gt;</code>、<code>&lt;pre&gt;</code> 和 <code>&lt;p&gt;</code>，前后使用空行进行分隔。尽量不要使用制表符或空格对 HTML 标签做缩进。在 HTML 块级标签内不能使用 Markdown 语法。例如 <code>&lt;p&gt;italic and **bold**&lt;/p&gt;</code> 将不起作用。</p></li><li><p>表格：----分割表头行和内容行，前后可以加 “:” 指定左对齐，右对齐或居中，| 用于分隔单元格<br>  |  表头   | 表头  |<br>  |  ----  | ----  |<br>  | 单元格  | 单元格 |<br>  | 单元格  | 单元格 |</p></li></ul>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Marktext 快捷键</title>
+    <link href="/2024/07/29/Marktext/"/>
+    <url>/2024/07/29/Marktext/</url>
+    
+    <content type="html"><![CDATA[<table><thead><tr><th align="center">功能</th><th align="center">命令</th></tr></thead><tbody><tr><td align="center">新建文件</td><td align="center">ctrl+T</td></tr><tr><td align="center">插入代码块</td><td align="center">ctrl+shift+k</td></tr><tr><td align="center">插入表格</td><td align="center">ctrl+shift+t</td></tr><tr><td align="center">插入图片</td><td align="center">ctrl+v</td></tr><tr><td align="center">源码模式切换</td><td align="center">ctrl+e</td></tr></tbody></table>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  
+</search>
